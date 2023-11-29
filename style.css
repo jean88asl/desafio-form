@@ -1,0 +1,204 @@
+/*reset básico de CSS*/
+:root {
+    --black: #111;
+    --white: #FFF;
+    --bg-color: #EFEFEF;
+    --bg-header: #535971;
+    --bg-btn: #FF5374;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    /* text-decoration: none; */
+    /* transition: .2s linear; */
+}
+
+html {
+    /*Ajustando o tamanho dos textos para rem*/
+    font-size: 62.5%;
+    /*scroll mais suave*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    /* line-height: 1.5; */
+    text-decoration: none;
+
+    background: var(--bg-color);
+
+    /* background: var(--bg-color); */
+}
+
+body::after {
+    content: '';
+    width: 100%;
+    height: 436px;
+
+    background: var(--bg-header);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+form {
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    width: 750px;
+    margin: 140px auto 0;
+}
+
+header {
+    width: 417px;
+}
+
+header h1 {
+    font-family: 'Staatliches', sans-serif;
+    color: var(--white);
+    
+    margin: 0 0 18px;
+}
+
+header p {
+    margin-bottom: 58px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+
+    font-size: 20px;
+    line-height: normal;
+}
+
+.app form {
+    background: var(--white);
+    border-radius: 2rem 2rem 0 0;
+
+    padding: 6rem;
+}
+
+.app form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+.app form fieldset:nth-child(3){
+    margin-bottom: 0;
+}
+
+.app form fieldset legend {
+    color: #535971;
+
+    font-family: Staatliches;
+    font-size: 24px;
+    line-height: 34px;
+
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    padding-bottom: 16px;
+}
+
+.input-wrapper label {
+    color: #4E4958;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.input-wrapper label span {
+    color: #C1BCCC;
+
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.input-wrapper label span:hover {
+    color: #6f6c77;
+}
+
+.input-wrapper input{
+    width: 100%;
+    height: 56px;
+
+    border-radius: 8px;
+    background: var(--shapes-02, #FAFAFC);
+    
+    padding-left: 20px;
+    border: 1px solid #E6E6F0;
+
+    margin-top: 8px;
+}
+
+.input-wrapper input:focus {
+    border: 1px solid #030327;
+}
+
+fieldset .col-2 {
+    display: flex;
+    gap: 22px;
+}
+
+.line {
+    border-top: 1px solid #E6E6F0;
+    padding-top: 32px;
+}
+
+.col-3 {
+    display: flex;
+    gap: 32px;
+}
+
+.col-3 .internal {
+    display: flex;
+    gap: 10px;
+}
+
+form fieldset .line .size {
+    font-size: 20px;
+}
+
+input:invalid {
+    border: 2px solid #FF1010;
+}
+
+
+/* rodapé */
+footer {
+    background: var(--bg-header);
+    padding: 5.2rem;
+
+    border-radius: 0 0 2rem 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 365px;
+}
+
+footer button {
+    width: 100%;
+    padding: 1.5rem 0;
+
+    border: none;
+    border-radius: 2rem;
+
+
+    background: var(--bg-btn);
+
+    color: #FFF;
+    font-family: 'Staatliches', sans-serif;
+
+    cursor: pointer;
+}
+
+footer button:hover {
+    background: #ca415c;
+}
